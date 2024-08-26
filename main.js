@@ -29,11 +29,5 @@ app.set('view engine','ejs');
 
 // route prefix
 app.use("", require("./routes/routes"));
-// app.get("/",(req,res) => {
-//     res.send("harsh sharma");
-// });
 
-// app.listen(PORT, () => {
-//   console.log(`server strated at http://localhost:${PORT}`);
-// });
 app.listen(PORT, () => console.log(`server strated at http://localhost:${PORT}`));
