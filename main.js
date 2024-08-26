@@ -6,12 +6,6 @@ const connectDB = require("./connnection");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
-
-// data base connection 
-// mongoose.connect(process.env.MONGO_URI);
-// const db = mongoose.connection;
-// db.on("error",(error) => console.log(error));
-// db.once("open",() => console.log("connection to the database!"));
 connectDB();
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
